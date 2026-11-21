@@ -1,0 +1,19 @@
+# Normalize all text files to LF in the repository and working tree
+* text=auto eol=lf
+
+# Images
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.webp binary
+*.ico binary
+
+# Fonts
+*.ttf binary
+*.otf binary
+*.woff binary
+*.woff2 binary
+
+# Procreate source files (zip archives)
+*.procreate binary
