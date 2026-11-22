@@ -37,6 +37,8 @@ Architecture intent: the game engine is pure TypeScript (no React, no Expo impor
 
 - The `react-dom` override in `pnpm-workspace.yaml` must match the exact `react` version. Update it on every Expo SDK change.
 - Planned on 2026-11-24: update `expo` (58.0.26) and `expo-router` (58.0.32), held back by the 7-day release age rule. Run `pnpm exec expo install --fix`, re-pin exact versions, dedicated commit.
+  Then re-run `pnpm audit` for the moderate `minimatch` alert (GHSA-g3hv-75wg-m249, pulled by `@expo/fingerprint`). If Expo has not fixed it, mark the Dependabot alert as tolerated with the justification: dev tooling only, glob patterns come from our own config. No forced override.
+- ESLint is held on 9.x (end of life) because `eslint-config-expo` 58 bundles `eslint-plugin-react` and `eslint-plugin-import`, which do not support ESLint 10 yet. Re-check on every Expo release and upgrade once supported.
 
 ## Commit rules
 
