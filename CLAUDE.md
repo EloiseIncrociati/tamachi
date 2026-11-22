@@ -51,5 +51,10 @@ Architecture intent: the game engine is pure TypeScript (no React, no Expo impor
 - Small steps, one concern at a time.
 - **Liz validates before every push.** Never push without explicit approval.
 - Show changes (diff or file content) before committing.
-- End every task with a short educational recap (what was done, why, how it works), written so it can be copied into a notebook.
+- End every task with a concise educational recap, written so it can be copied into a notebook:
+  - 10 to 12 lines maximum
+  - one line per concept: what it is + why we use it
+  - only concepts that are new in this task
+  - no tables
+  - at most one short example, only if a concept is subtle
 - Conversation in French by default; code, commits and docs in English.
