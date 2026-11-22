@@ -1,5 +1,7 @@
 # Tama'chi
 
+[![CI](https://github.com/EloiseIncrociati/tamachi/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/EloiseIncrociati/tamachi/actions/workflows/ci.yml)
+
 Meet Tama, a small white and ginger cat, hand-drawn and animated frame by frame.
 
 > 🚧 Work in progress, built in public.
