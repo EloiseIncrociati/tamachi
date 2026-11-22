@@ -33,6 +33,11 @@ Architecture intent: the game engine is pure TypeScript (no React, no Expo impor
   - these settings must live in the configuration file that pnpm 11 actually reads: check the official pnpm documentation at configuration time, do not assume the file or syntax
 - **GitHub Actions pinned by full commit SHA** (with the version as a trailing comment), never by tag or branch.
 
+## Maintenance notes
+
+- The `react-dom` override in `pnpm-workspace.yaml` must match the exact `react` version. Update it on every Expo SDK change.
+- Planned on 2026-11-24: update `expo` (58.0.26) and `expo-router` (58.0.32), held back by the 7-day release age rule. Run `pnpm exec expo install --fix`, re-pin exact versions, dedicated commit.
+
 ## Commit rules
 
 - One line only, Conventional Commits format: `type(scope): description`
