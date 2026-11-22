@@ -49,6 +49,7 @@ Architecture intent: the game engine is pure TypeScript (no React, no Expo impor
 - No body.
 - No `Co-Authored-By` line, no tool attribution.
 - English, imperative mood, lowercase description.
+- Dependabot PRs are merged with squash, with the message rewritten on one line (e.g. `ci: bump actions/checkout to v7.0.2`).
 
 ## Working style
 
