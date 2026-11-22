@@ -1,0 +1,21 @@
+# pnpm 11 project settings. Since pnpm 11, .npmrc only holds auth/registry/proxy
+# settings; everything else lives here. Reference: https://pnpm.io/settings
+
+# Save exact versions (no ^ or ~) when adding dependencies.
+saveExact: true
+
+# Refuse any version published less than 7 days ago (value in minutes).
+# Strict mode is enabled implicitly once this is set: resolution fails
+# instead of falling back to a too-recent version.
+minimumReleaseAge: 10080
+
+# Dependency build scripts (preinstall/install/postinstall) never run unless
+# the package is explicitly approved in allowBuilds. Unreviewed scripts make
+# the install fail. Both values below are pnpm 11 defaults, kept explicit.
+strictDepBuilds: true
+dangerouslyAllowAllBuilds: false
+
+# react-dom is auto-installed as a peer of @expo/metro-runtime (unused on
+# mobile). Keep it aligned with the exact react version on every SDK upgrade.
+overrides:
+  react-dom: 19.3.0
